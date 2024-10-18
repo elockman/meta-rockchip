@@ -1,9 +1,11 @@
 # Rockchip RK3399 compiles some M0 firmware which requires an arm-none-eabi GCC
 # toolchain
 DEPENDS:append:rk3399 = " gcc-arm-none-eabi-native"
+DEPENDS:append:rk3528 = " gcc-arm-none-eabi-native"
 
 COMPATIBLE_MACHINE:append:rk3399 = "|rk3399"
 COMPATIBLE_MACHINE:append:rk3328 = "|rk3328"
+COMPATIBLE_MACHINE:append:rk3528 = "|rk3528"
 COMPATIBLE_MACHINE:append:px30 = "|px30"
 
 FILESEXTRAPATHS:prepend := "${THISDIR}/files:"
@@ -18,6 +20,7 @@ SRC_URI += "\
 # | aarch64-yoe-linux-musl-ld: region `PMUSRAM' overflowed by 3928 bytes
 # this needs fixing until then use gcc
 TOOLCHAIN:rk3399 = "gcc"
+TOOLCHAIN:rk3528 = "gcc"
 
 fixup_baudrate() {
 	:
