@@ -6,6 +6,11 @@ SRC_URI:radxa-zero-3 = "git://github.com/Kwiboo/u-boot-rockchip.git;protocol=htt
 SRCREV:radxa-zero-3 = "8cdf606e616baa36751f3b4adcfaefc781126c8c"
 SRCREV:radxa-zero-3:rk-u-boot-env = "8cdf606e616baa36751f3b4adcfaefc781126c8c"
 
+SRC_URI:rock-2a = "git://github.com/radxa/u-boot.git;protocol=https;branch=next-dev-v2024.03;name=radxa"
+SRCREV:rock-2a = "875ab5399d8fa48412b442e7d5029b69f0363a3e"
+SRCREV:rock-2a:rk-u-boot-env = "875ab5399d8fa48412b442e7d5029b69f0363a3e"
+LICENSE = "CLOSED"
+
 SRC_URI:append:rk-u-boot-env = " file://rockchip-enable-environment-mmc.cfg"
 SRCREV:rk-u-boot-env = "cdfcc37428e06f4730ab9a17cc084eeb7676ea1a"
 
