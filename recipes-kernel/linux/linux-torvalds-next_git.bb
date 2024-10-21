@@ -16,8 +16,8 @@ SRC_URI = " \
 	git://git.kernel.org/pub/scm/linux/kernel/git/next/linux-next.git;protocol=https;nobranch=1 \
 	file://rockchip-kmeta;type=kmeta;name=rockchip-kmeta;destsuffix=rockchip-kmeta \
 	"
-# this is tag 'next-20240611'
-SRCREV = "a957267fa7e9159d3d2ee1421359ebf228570c68"
+# this is tag 'v6.10'
+SRCREV = "0c3836482481200ead7b416ca80c68a29cfdaabd"
 
 inherit kernel
 inherit kernel-yocto
