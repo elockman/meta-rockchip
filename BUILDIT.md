@@ -23,7 +23,7 @@ cd ~/
 mkdir projects
 cd ~/projects
 mkdir rock2a
-cd ~/projects/rock2a
+cd ~/projects/zero3w
 ```
 
 In order to build an image, you need to download some layers.
@@ -34,7 +34,7 @@ git clone git://git.openembedded.org/bitbake -b master
 git clone git://git.openembedded.org/openembedded-core -b scarthgap
 git clone git://git.yoctoproject.org/meta-arm -b scarthgap
 git clone git://git.openembedded.org/meta-openembedded -b scarthgap
-git clone https://github.com/elockman/meta-rockchip.git -b scarthgap
+git clone https://github.com/elockman/meta-rockchip.git -b zero-3w
 git clone git://git.yoctoproject.org/meta-virtualization -b scarthgap
 ```
 
@@ -47,8 +47,7 @@ source openembedded-core/oe-init-build-env
 Next, move yocto build config files
 
 ```
-mv ~/projects/rock2a/yocto/meta-rockchip/conf/local.conf ~/projects/rock2a/yocto/build/conf/
-mv ~/projects/rock2a/yocto/meta-rockchip/conf/bblayers.conf ~/projects/rock2a/yocto/build/conf/
+mv ~/projects/zero3w/yocto/meta-rockchip/conf/bblayers.conf ~/projects/zero3w/yocto/build/conf/
 ```
 
 ## Building meta- BSP Layers
@@ -56,5 +55,5 @@ mv ~/projects/rock2a/yocto/meta-rockchip/conf/bblayers.conf ~/projects/rock2a/yo
 Finally, bitbake the project
 
 ```
-MACHINE=rock-2a bitbake core-image-minimal
+MACHINE=radxa-zero-3w bitbake core-image-minimal
 ```
