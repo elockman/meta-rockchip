@@ -32,6 +32,8 @@ SRC_URI:rock-2a = "git://github.com/elockman/kernel;protocol=https;branch=linux-
 SRCREV:rock-2a = "77cd69dabd8a2fec4880bcd90d852f8e86703e81"
 SRCREV_machine:rock-2a = "77cd69dabd8a2fec4880bcd90d852f8e86703e81"
 
+SRC_URI:append = " file://usb-wifi.cfg"
+
 # SRC_URI:rock-2a = "git://github.com/elockman/kernel;protocol=https;branch=linux-6.6-rock-2a;name=elockman"
 # SRCREV:rock-2a = "3295f523043b2bccb6bf9c20e252a1b528e445d1"
 # SRCREV_machine:rock-2a = "3295f523043b2bccb6bf9c20e252a1b528e445d1"
